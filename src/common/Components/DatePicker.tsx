@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Datepicker from "react-tailwindcss-datepicker";
 import { DateValueType } from "react-tailwindcss-datepicker/dist/types";
 
-function Calendar() {
+function DatePicker() {
   const [value, setValue] = useState<DateValueType>({
     startDate: new Date(),
     endDate: new Date(),
@@ -21,4 +21,4 @@ function Calendar() {
   );
 }
 
-export default Calendar;
+export default DatePicker;
