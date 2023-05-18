@@ -3,26 +3,37 @@ import DatePicker from "../common/Components/DatePicker";
 import { testAxios } from "../common/utils/axios";
 
 function FrontPage() {
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const target = event.target as typeof event.target & {
-            name: { value: string };
-        };
-        console.log(target.name.value);
-    };
-
     testAxios().then((result) => console.log(result));
+
+    const testData = {
+        vals: [
+            {
+                id: 1,
+                name: "Gym Sesh",
+            },
+            {
+                id: 2,
+                name: "Hiking",
+            },
+        ],
+    };
 
     return (
         <div className="front-page">
-            <DatePicker />
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" name="name" />
-                </label>
-                <input type="submit" name="Submit" />
-            </form>
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+                {testData.vals.map((data, index) => {
+                    return (
+                        <tr key={index}>
+                            <td>{data.id}</td>
+                            <td>{data.name}</td>
+                        </tr>
+                    );
+                })}
+            </table>
         </div>
     );
 }
