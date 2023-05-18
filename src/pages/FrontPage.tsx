@@ -1,5 +1,6 @@
 import React from "react";
 import DatePicker from "../common/Components/DatePicker";
+import { testAxios } from "../common/utils/axios";
 
 function FrontPage() {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -9,6 +10,8 @@ function FrontPage() {
         };
         console.log(target.name.value);
     };
+
+    testAxios().then((result) => console.log(result));
 
     return (
         <div className="front-page">
