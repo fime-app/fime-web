@@ -20,14 +20,18 @@ function FrontPage() {
 
     return (
         <div className="front-page">
-            <table>
+            <table className="table-fixed border">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
                 </tr>
                 {testData.vals.map((data, index) => {
                     return (
-                        <tr key={index}>
+                        <tr
+                            key={index}
+                            className="text-left"
+                            onClick={() => console.log(index)}
+                        >
                             <td>{data.id}</td>
                             <td>{data.name}</td>
                         </tr>
