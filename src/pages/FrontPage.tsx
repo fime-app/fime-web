@@ -15,6 +15,10 @@ function FrontPage() {
                 id: 2,
                 name: "Hiking",
             },
+            {
+                id: 3,
+                name: "Fucking",
+            },
         ],
     };
 
