@@ -5,7 +5,7 @@ type EventBoxProps = {
     description: string,
 }
 
-const EventBox = ({ name, description }: EventBoxProps) => {
+const EventBox = ({ name, description }: EventBoxProps): JSX.Element => {
     return (
         <div className="eventBox">
             <div className="eventTitle">{name}</div>
