@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import CreateEventPage from "./pages/CreateEventPage";
 
 const router = createBrowserRouter([
     {
@@ -11,8 +12,8 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "/test",
-        element: <div>Test!</div>,
+        path: "/create-event",
+        element: <CreateEventPage />,
     },
 ]);
 
