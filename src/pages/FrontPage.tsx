@@ -1,6 +1,7 @@
 import React from "react";
 import DatePicker from "../common/Components/DatePicker";
 import EventBox from "../common/Components/EventBox/EventBox";
+import Modal from "../common/Components/Modal/Modal";
 import { testAxios } from "../common/utils/axios";
 import "./FrontPage.css"
 
@@ -67,6 +68,11 @@ function FrontPage() {
                     }
                 </div>
             </div>
+            <Modal>
+                <div>
+                    test
+                </div>
+            </Modal>
         </div>
     );
 }
