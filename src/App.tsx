@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import Calendar from "./common/Components/Calendar";
+import Frontpage from "./pages/FrontPage";
 
 function App() {
   return (
     <div className="App">
-      <Calendar />
+      <div className="grid place-items-center h-screen">
+        <Frontpage />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,47 @@
+.create-event-div{
+    display: flex;
+    justify-content: center;
+}
+.button-alignment-div{
+    width: 79%;
+    display: flex;
+    justify-content: left;
+}
+.create-event-button{
+    border: 1px solid rgb(237, 237, 237);
+    background-color:azure;
+    padding: 5px 10px;
+    
+}
+.event-largest-container{
+    border:5px solid black;
+    display: flex;
+    justify-content: center;
+}
+.event-grid-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-gap: 20px; 
+    border: 1px solid black; 
+    width: 80%;
+}
+.eventBox{
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 10px;
+}
+.eventTitle{
+    color: rgb(37, 37, 37);
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10px;
+}
+.eventDescription{
+    color: rgb(58, 58, 58);
+    text-align: left;
+}
+.eventLine{
+    width:100%;
+    height:3px;
+    background-color:black;
+}
