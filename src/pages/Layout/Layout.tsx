@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from "react-router-dom";
 
 type LayoutProps = {
-    children: any
+    children: React.ReactNode
 }
 const Layout = ({ children }: LayoutProps) => {
     return (
