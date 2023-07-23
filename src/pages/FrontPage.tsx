@@ -52,7 +52,7 @@ function FrontPage() {
             <div className="create-event-div">
                 <div className="button-alignment-div">
                     <button className="create-event-button" onClick={myFunction}>
-                        + Create Event
+                        + Create Event LOL
                         </button>
                 </div>
             </div>
