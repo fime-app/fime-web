@@ -1,11 +1,10 @@
-import { DateValueType } from "react-tailwindcss-datepicker/dist/types";
 import { DateRange } from "../types";
 
-type CreateEventDateRangesProps = {
+type DateRangesDisplayProps = {
     dateRanges: DateRange[] | undefined;
 };
 
-function CreateEventDateRanges({ dateRanges }: CreateEventDateRangesProps) {
+function DateRangesDisplay({ dateRanges }: DateRangesDisplayProps) {
     return (
         <div>
             <strong>Date Ranges</strong>
@@ -22,4 +21,4 @@ function CreateEventDateRanges({ dateRanges }: CreateEventDateRangesProps) {
     );
 }
 
-export default CreateEventDateRanges;
+export default DateRangesDisplay;
