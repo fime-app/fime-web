@@ -4,9 +4,10 @@ type DateRangesDisplayProps = {
     dateRanges: DateRange[] | undefined;
 };
 
+//TODO: Make this scrollable
 function DateRangesDisplay({ dateRanges }: DateRangesDisplayProps) {
     return (
-        <div>
+        <div className="overflow-y-scroll">
             <strong>Date Ranges</strong>
             {dateRanges?.map((range, index) => (
                 <div className="mt-5">

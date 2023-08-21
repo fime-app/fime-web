@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CreateEventPage from "./pages/CreateEventPage";
+import MyEventPage from "./pages/MyEventPage";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     {
         path: "/create-event",
         element: <CreateEventPage />,
+    },
+    {
+        path: "/home",
+        element: <MyEventPage />,
     },
 ]);
 
