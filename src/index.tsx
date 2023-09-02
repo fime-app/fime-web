@@ -1,24 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import CreateEventPage from "./pages/CreateEventPage";
-import MyEventPage from "./pages/MyEventPage";
+import MyEventsPage from "./pages/MyEventPage";
 
 const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <App />,
-    },
     {
         path: "/create-event",
         element: <CreateEventPage />,
     },
     {
-        path: "/home",
-        element: <MyEventPage />,
+        path: "/",
+        element: <MyEventsPage />,
+    },
+    {
+        path: "/events",
+        element: <MyEventsPage />,
     },
 ]);
 

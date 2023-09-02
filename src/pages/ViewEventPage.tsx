@@ -1,12 +1,12 @@
 import EventDisplayer from "../common/Components/EventDisplayer";
 
-function MyEventsPage() {
+function ViewEventPage() {
     return (
         <div className="flex flex-col items-center justify-center">
-            <div className="font-bold text-lg mt-5 mb-4">My Events</div>
+            <div className="mt-5 font-bold text-lg">Event Name</div>
             <EventDisplayer />
         </div>
     );
 }
 
-export default MyEventsPage;
+export default ViewEventPage;

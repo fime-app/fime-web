@@ -6,7 +6,14 @@ export type DateRange = {
 };
 
 export type Event = {
-    id: string;
     name: string;
+    description: string;
+    dateRanges: DateRange[];
+};
+
+export type AxiosEventsResponse = {
+    id: number;
+    name: string;
+    description: string;
     dateRanges: DateRange[];
 };
