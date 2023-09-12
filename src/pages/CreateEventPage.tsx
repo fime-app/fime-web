@@ -50,6 +50,7 @@ function CreateEventPage() {
 
     const handleSubmit = () => {
         console.log(`Name: ${eventName}`);
+        //post to event here
     };
 
     return (

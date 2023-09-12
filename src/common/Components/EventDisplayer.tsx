@@ -15,7 +15,6 @@ function EventDisplayer() {
         axios.defaults.baseURL = process.env.REACT_APP_BE_URL;
         const response = await axios.get("/all-events");
         const data = response.data.map((event: AxiosEventsResponse) => {
-            //remove id
             return {
                 name: event.name,
                 description: event.description,
